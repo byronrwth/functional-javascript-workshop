@@ -7,8 +7,8 @@ function getShortMessages(messages) {
     return msg;
   }
   var newmsgs = messages.map(msg) ;
-  //return newmsgs.filter(function(i) { return i.length < 50; });
-  return newmsgs;
+  return newmsgs.filter(function(i) { return i.length < 50; });
+  //return newmsgs;
 }
 
 module.exports = getShortMessages
